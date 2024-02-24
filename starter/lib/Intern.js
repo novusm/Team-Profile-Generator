@@ -1,4 +1,3 @@
-// TODO: Write code to define and export the Intern class.  HINT: This class should inherit from Employee.
 // lib/Intern.js
 const Employee = require('./Employee');
 
