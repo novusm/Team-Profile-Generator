@@ -33,15 +33,19 @@ git clone <repository-url>
 Navigate to the project directory:
 cd <project-directory>
 
-Install project dependencies using npm:
-After installation, navigate to the project directory in your terminal.
+Install project dependencies using npm, specifically: 
+- npm install --save inquirer@^8.0.0 
 
-Run the application by executing the following command:
+- After installation, navigate to the project directory in your terminal.
+
+- Run the application by executing the following command:
 node index.js
 
-Follow the prompts to input information about the team manager, engineers, and interns.
-Once you have finished providing information for all team members, the application will generate an HTML file in the output directory.
-Open the generated HTML file in a web browser to view the team profile page..
+- Follow the prompts to input information about the team manager, engineers, and interns.
+
+- Once you have finished providing information for all team members, the application will generate an HTML file in the output directory.
+  
+- Open the generated HTML file in a web browser to view the team profile page..
 
 
 ## Contributing
