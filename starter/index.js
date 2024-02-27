@@ -1,9 +1,8 @@
-// index.js
 const inquirer = require("inquirer");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-const render = require("./src/page-template");
+const generateTeamHTML = require("./src/page-template"); 
 const fs = require("fs");
 const path = require("path");
 
@@ -14,6 +13,7 @@ const teamMembers = [];
 
 // Function to prompt for Manager's information
 const promptManager = async () => {
+    console.log("Please enter the team manager's information:");
     const managerQuestions = [
         {
             type: "input",
@@ -44,6 +44,7 @@ const promptManager = async () => {
 
 // Function to prompt for Engineer's information
 const promptEngineer = async () => {
+    console.log("Please enter the engineer's information:");
     const engineerQuestions = [
         {
             type: "input",
@@ -74,6 +75,7 @@ const promptEngineer = async () => {
 
 // Function to prompt for Intern's information
 const promptIntern = async () => {
+    console.log("Please enter the intern's information:");
     const internQuestions = [
         {
             type: "input",
@@ -139,11 +141,17 @@ const init = async () => {
     } while (nextAction !== "Finish building the team");
 
     // Generate HTML and write to file
-    const html = render(teamMembers);
+    const html = generateTeamHTML(teamMembers); // Updated to use generateTeamHTML
     fs.writeFileSync(outputPath, html);
 
     console.log(`Team profile generated successfully! Check ${outputPath}`);
 };
 
-// Call init function to start the application
+// Function to start the application
 init();
+
+module.exports = {
+    promptManager,
+    promptEngineer,
+    promptIntern
+};
