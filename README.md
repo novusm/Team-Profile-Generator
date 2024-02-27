@@ -71,3 +71,5 @@ MDM Web Docs
 ## Links
 
 Git Hub containing project code URL: https://github.com/novusm/Team-Profile-Generator/ Deployed project: https://novusm.github.io/Team-Profile-Generator Git hub: https://github.com/novusm ReadMe: https://github.com/novusm/Team-Profile-Generator/blob/main/README.md Project Screenshot:
+![image](https://github.com/novusm/Team-Profile-Generator/assets/126507510/dc881a6a-dedb-49f5-9b2d-cda553ff618f)
+
